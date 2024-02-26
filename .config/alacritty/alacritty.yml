@@ -916,13 +916,14 @@ font:
   # Highlight window damage information.
   #highlight_damage: false
   #
-key_bindings:
-  - { key: Right, mods: Alt, chars: "\x1BF" }
-  - { key: Left,  mods: Alt, chars: "\x1BB" }
+
+# key_bindings:
+   # - { key: Right, mods: Alt, chars: "\x1BF" }
+   # - { key: Left,  mods: Alt, chars: "\x1BB" }
+   #  - { key: 1,     mods: Alt, chars: "\x1B1"}
 
 
 import:
-  # We use Alacritty's default Linux config directory as our storage location here.
   # mkdir -p ~/.config/alacritty/themes
   # git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
   - ~/.config/alacritty/themes/themes/seashells.yaml

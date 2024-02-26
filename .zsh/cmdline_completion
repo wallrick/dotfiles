@@ -1,0 +1,5 @@
+skaffold completion zsh > ~/.zsh/completion/_skaffold
+kubectl completion zsh > ~/.zsh/completion/_kubectl
+
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i

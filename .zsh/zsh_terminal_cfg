@@ -1,0 +1,9 @@
+# Get Kubectl config context in the PS1
+if [[ ! -f ~/.zsh/kubectl_ps1 ]]; then 
+  curl https://raw.githubusercontent.com/superbrothers/zsh-kubectl-prompt/master/kubectl.zsh -o ~/.zsh/kubectl_ps1
+fi
+
+autoload -U colors; colors
+source ~/.zsh/kubectl_ps1
+RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
+
